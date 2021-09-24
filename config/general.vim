@@ -230,7 +230,7 @@ set winminwidth=10      " Minimum width for inactive windows
 " set winheight=1         " Minimum height for active window
 " set winminheight=0      " Minimum height for inactive window
 
-set noshowcmd           " Don't show command in status line
+" set noshowcmd           " Don't show command in status line
 set cmdheight=1         " Height of the command line
 set cmdwinheight=5      " Command-line lines
 set equalalways         " Resize windows on split or close

@@ -143,6 +143,7 @@ function! s:use_dein()
 		let g:dein#install_message_type = 'echo'
 		let g:dein#install_max_processes = 10
 		let g:dein#enable_notification = v:true
+		let g:dein#types#git#clone_depth = 1
 
 		" Add dein to vim's runtimepath
 		if &runtimepath !~# '/dein.vim'
