@@ -1,0 +1,5 @@
+# - repo: itchyny/lightline.vim
+- repo: elixir-editors/vim-elixir
+# - repo: joshdick/onedark.vim
+- repo: folke/tokyonight.nvim
+- repo: https://github.com/edwinb/idris2-vim

@@ -6,5 +6,5 @@
 /.stignore
 /.stfolder
 /.stversions
-config/local.plugins.yaml
-config/local.vim
+/* config/local.plugins.yaml */
+/* config/local.vim          */
