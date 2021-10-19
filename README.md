@@ -65,7 +65,7 @@ Works best with [Neovim] 0.5.x ⚠️ For Vim 8.x, use the
 * Fast startup time
 * Robust, yet light-weight
 * Lazy-load 95% of plugins with [Shougo/dein.vim]
-* LSP installers (`:LspInstall <filetype>`)
+* LSP installers (`:LspInstall <server>`)
 * Custom side-menu (try it! <kbd>Space</kbd>+<kbd>l</kbd>)
 * Custom context-menu (try it! <kbd>;</kbd>+<kbd>c</kbd>)
 * Auto-complete extensive setup with [nvim-lspconfig] and [nvim-cmp]
@@ -115,28 +115,24 @@ Enjoy! :smile:
 ## Language-Server Protocol (LSP)
 
 To leverage LSP auto-completions and other functionalities, once you open a
-file in Neovim, run `:LspInstall <language>` to use [kabouzeid/nvim-lspinstall]
-installation feature. Use <kbd>Tab</kbd> to list available servers.
+file in Neovim, run `:LspInstall <server>` to use
+[williamboman/nvim-lsp-installer] installation feature.
+Use <kbd>Tab</kbd> to list available servers.
 
 Here are some useful LSP server installations:
 
-* `:LspInstall bash`
+* `:LspInstall html cssls jsonls yamlls`
+* `:LspInstall gopls`
+* `:LspInstall pylsp`
+* `:LspInstall bashls vimls sumneko_lua`
 * `:LspInstall diagnosticls`
-* `:LspInstall dockerfile`
-* `:LspInstall go`
-* `:LspInstall json`
-* `:LspInstall lua`
-* `:LspInstall python`
-* `:LspInstall typescript`
-* `:LspInstall vim`
-* `:LspInstall yaml`
-* and [more](https://github.com/kabouzeid/nvim-lspinstall/tree/main/lua/lspinstall/servers)…
+* and [more](https://github.com/williamboman/nvim-lsp-installer#available-lsps)…
 
 See [lua/plugins/lspconfig.lua] and [lua/lsp/*] for built-in
 mapping and configuration for several language-servers. You'll need utilities
 like `npm` and `curl` to install some extensions. For more information, see:
 
-* Plugin used for installation: [kabouzeid/nvim-lspinstall] and
+* Plugin used for installation: [williamboman/nvim-lsp-installer] and
   [supported language-servers].
 * Plugin used for configuration: [neovim/nvim-lspconfig]
 
@@ -365,7 +361,7 @@ _Note_ that 95% of the plugins are **[lazy-loaded]**.
 
 | Name           | Description
 | -------------- | ----------------------
-| [kabouzeid/nvim-lspinstall] | Provides the missing :LspInstall for nvim-lspconfig
+| [williamboman/nvim-lsp-installer] | Provides the missing :LspInstall for nvim-lspconfig
 | [kosayoda/nvim-lightbulb] | VSCode 💡 for neovim's built-in LSP
 | [neovim/nvim-lspconfig] | Quickstart configurations for the Nvim LSP client
 | [ray-x/lsp_signature.nvim] | LSP signature hint when you type
@@ -405,7 +401,8 @@ _Note_ that 95% of the plugins are **[lazy-loaded]**.
 | Name           | Description
 | -------------- | ----------------------
 | [nvim-treesitter/nvim-treesitter] | Nvim Treesitter configurations and abstraction layer
-| [nvim-treesitter/nvim-treesitter-textobjects] | textobjects using tree-sitter queries
+| [nvim-treesitter/nvim-treesitter-textobjects] | Textobjects using treesitter queries
+| [JoosepAlviste/nvim-ts-context-commentstring] | Set the commentstring based on the cursor location
 | [chrisbra/csv.vim] | Handling column separated data
 | [tpope/vim-git] | Git runtime files
 | [dag/vim-fish] | Fish shell edit support
@@ -484,7 +481,7 @@ _Note_ that 95% of the plugins are **[lazy-loaded]**.
 [kristijanhusak/orgmode.nvim]: https://github.com/kristijanhusak/orgmode.nvim
 [vimwiki/vimwiki]: https://github.com/vimwiki/vimwiki
 
-[kabouzeid/nvim-lspinstall]: https://github.com/kabouzeid/nvim-lspinstall
+[williamboman/nvim-lsp-installer]: https://github.com/williamboman/nvim-lsp-installer
 [kosayoda/nvim-lightbulb]: https://github.com/kosayoda/nvim-lightbulb
 [neovim/nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
 [ray-x/lsp_signature.nvim]: https://github.com/ray-x/lsp_signature.nvim
@@ -517,6 +514,7 @@ _Note_ that 95% of the plugins are **[lazy-loaded]**.
 
 [nvim-treesitter/nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [nvim-treesitter/nvim-treesitter-textobjects]: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+[JoosepAlviste/nvim-ts-context-commentstring]: https://github.com/JoosepAlviste/nvim-ts-context-commentstring
 
 [chrisbra/csv.vim]: https://github.com/chrisbra/csv.vim
 [tpope/vim-git]: https://github.com/tpope/vim-git
@@ -865,7 +863,7 @@ Note that,
 </details>
 
 [Neovim]: https://github.com/neovim/neovim
-[supported language-servers]: https://github.com/kabouzeid/nvim-lspinstall/tree/main/lua/lspinstall/servers
+[supported language-servers]: https://github.com/williamboman/nvim-lsp-installer#available-lsps
 [lua/lsp/*]: ./lua/lsp/
 [lua/plugins/lspconfig.lua]: ./lua/plugins/lspconfig.lua
 [nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
