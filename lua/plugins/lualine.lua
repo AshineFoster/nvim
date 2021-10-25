@@ -31,9 +31,9 @@ local conditions = {
 }
 
 -- Detect quickfix vs. location list
-local function is_loclist()
-	return vim.fn.getloclist(0, {filewinid = 1}).filewinid ~= 0
-end
+-- local function is_loclist()
+-- 	return vim.fn.getloclist(0, {filewinid = 1}).filewinid ~= 0
+-- end
 
 -- Extension: Quickfix
 -- local extension_quickfix = {
@@ -63,36 +63,36 @@ end
 -- }
 
 -- Extension: File-explorer
-local extension_file_explorer = {
-	sections = {
-		lualine_a = {
-			{
-				function() return '▊' end,
-				-- color = { fg = colors.active.boundary },
-				padding = 0,
-			},
-			{ function() return '' end, padding = 1 },
-			{ function() return '%<' end, padding = { left = 1, right = 0 }},
-			{
-				function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':~') end,
-				padding = { left = 0, right = 1 },
-			}
-		},
-		lualine_z = { function() return '%l/%L' end },
-	},
-	inactive_sections = {
-		lualine_a = {
-			{ function() return '' end, padding = 1 },
-			{ function() return '%<' end, padding = { left = 1, right = 0 }},
-			{
-				function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':~') end,
-				padding = { left = 0, right = 1 },
-			}
-		},
-		lualine_z = { function() return '%l/%L' end },
-	},
-	filetypes = {'fern'},
-}
+-- local extension_file_explorer = {
+-- 	sections = {
+-- 		lualine_a = {
+-- 			{
+-- 				function() return '▊' end,
+-- 				-- color = { fg = colors.active.boundary },
+-- 				padding = 0,
+-- 			},
+-- 			{ function() return '' end, padding = 1 },
+-- 			{ function() return '%<' end, padding = { left = 1, right = 0 }},
+-- 			{
+-- 				function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':~') end,
+-- 				padding = { left = 0, right = 1 },
+-- 			}
+-- 		},
+-- 		lualine_z = { function() return '%l/%L' end },
+-- 	},
+-- 	inactive_sections = {
+-- 		lualine_a = {
+-- 			{ function() return '' end, padding = 1 },
+-- 			{ function() return '%<' end, padding = { left = 1, right = 0 }},
+-- 			{
+-- 				function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':~') end,
+-- 				padding = { left = 0, right = 1 },
+-- 			}
+-- 		},
+-- 		lualine_z = { function() return '%l/%L' end },
+-- 	},
+-- 	filetypes = {'fern'},
+-- }
 
 -- Extension: Only name and line-count
 -- local extension_line_count = {
