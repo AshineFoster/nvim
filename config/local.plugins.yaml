@@ -3,3 +3,4 @@
 # - repo: joshdick/onedark.vim
 - repo: folke/tokyonight.nvim
 - repo: https://github.com/edwinb/idris2-vim
+- repo: simrat39/rust-tools.nvim
