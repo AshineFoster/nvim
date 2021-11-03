@@ -642,7 +642,7 @@ Note that,
 
 | Key   | Mode | Action             | Plugin or Mapping
 | ----- |:----:| ------------------ | ------
-| <kbd>!</kbd> | 𝐍 | Shortcut for shell command | `:!`
+| <kbd>!!!</kbd> | 𝐍 | Shortcut for shell command | `:!`
 | <kbd>g!</kbd> | 𝐍 | Read vim command into buffer | `:put=execute('⌴')`
 | <kbd>Ctrl</kbd>+<kbd>n</kbd> / <kbd>p</kbd> | 𝐂 | Switch history search pairs | <kbd>↓</kbd> / <kbd>↑</kbd>
 | <kbd>↓</kbd> / <kbd>↑</kbd> | 𝐂 | Switch history search pairs | `Ctrl` `n`/`p`

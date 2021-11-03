@@ -15,3 +15,4 @@ if &term =~ '256color'
     " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
 endif
+nnoremap !!! :!

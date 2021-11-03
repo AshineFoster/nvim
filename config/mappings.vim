@@ -188,7 +188,7 @@ endfunction "}}}
 " -----------------
 
 " Start an external command with a single bang
-nnoremap ! :!
+" nnoremap ! :!
 
 " Put vim command output into buffer
 nnoremap g! :put=execute('')<Left><Left>
