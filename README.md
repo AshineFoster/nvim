@@ -100,7 +100,7 @@ Works best with [Neovim] 0.5.x ⚠️ For Vim 8.x, use the
 
 ```bash
 mkdir ~/.config
-git clone git://github.com/rafi/vim-config.git ~/.config/nvim
+git clone https://github.com/AshineFoster/nvim.git  ~/.config/nvim
 cd ~/.config/nvim
 ```
 
