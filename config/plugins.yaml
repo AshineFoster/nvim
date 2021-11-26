@@ -340,7 +340,7 @@
   hook_post_source: lua require('plugins.telescope').setup()
 
 - repo: rmagatti/session-lens
-  depends: auto-session
+  # depends: auto-session
   if: has('nvim-0.5')
   lazy: true
   hook_post_source: lua require('plugins.session-lens')

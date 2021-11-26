@@ -77,11 +77,11 @@ if get(g:, 'tabline_plugin_enable', 1)
 	call s:source_file('config/tabline.vim')
 endif
 
-lua << EOF
-require'lspconfig'.pylsp.setup{}
-require'lspconfig'.clangd.setup{}
-require'lspconfig'.rust_analyzer.setup{}
-EOF
+" lua << EOF
+" require'lspconfig'.pylsp.setup{}
+" require'lspconfig'.clangd.setup{}
+" require'lspconfig'.rust_analyzer.setup{}
+" EOF
 
 set secure
 
