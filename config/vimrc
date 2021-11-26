@@ -79,6 +79,8 @@ endif
 
 lua << EOF
 require'lspconfig'.pylsp.setup{}
+require'lspconfig'.clangd.setup{}
+require'lspconfig'.rust_analyzer.setup{}
 EOF
 
 set secure
