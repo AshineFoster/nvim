@@ -16,3 +16,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 nnoremap !!! :!
+
+lua << EOF
+vim.fn.sign_define('LightBulbSign', { text = "", texthl = "", linehl="", numhl="" })
+EOF
