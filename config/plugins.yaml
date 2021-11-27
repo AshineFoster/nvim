@@ -218,14 +218,14 @@
 
 - repo: rhysd/committia.vim
   on_event: BufWinEnter
-  hook_add: let g:loaded_committia = 1
-  hook_source: |-
-    let g:committia_min_window_width = 70
-    autocmd user_events BufWinEnter COMMIT_EDITMSG,MERGE_MSG
-      \  if ! exists('b:committia_opened')
-      \|   call committia#open('git')
-      \| endif
-
+  # hook_add: let g:loaded_committia = 1
+  # hook_source: |-
+  #   let g:committia_min_window_width = 70
+  #   autocmd user_events BufWinEnter COMMIT_EDITMSG,MERGE_MSG
+  #     \  if ! exists('b:committia_opened')
+  #     \|   call committia#open('git')
+  #     \| endif
+  # 
 - repo: itchyny/calendar.vim
   on_cmd: Calendar
   hook_source: |-
