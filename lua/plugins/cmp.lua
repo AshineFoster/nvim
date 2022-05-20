@@ -119,10 +119,7 @@ cmp.setup {
 		end, { 'i', 's' }),
 	},
 
-	documentation = {
-		border = 'rounded',
-		winhighlight = 'NormalFloat:UserFloat,FloatBorder:UserBorder',
-	},
+	window.documentation = cmp.config.window.bordered(),
 
 	formatting = {
 		format = function(entry, vim_item)
